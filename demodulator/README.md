@@ -21,8 +21,8 @@ layout diagram in the 'umassmoo' repository):
   channel and bit power channel.
 
 * Attach one scope channel (call it the "recieved" channel) to Moo's ground pin
-  and `RECEIVE_RFID` pin. This is the output pin of level translator with
-  output channel as the input.
+  and `RECEIVE` pin. This is the output pin of level translator with output
+  channel as the input.
 
 * Send signals from a reader (XXX how?)
 
