@@ -24,18 +24,20 @@ layout diagram in the 'umassmoo' repository):
   and `RECEIVE` pin. This is the output pin of level translator with output
   channel as the input.
 
-* Send signals from a reader (XXX how?)
+* Send signals from a reader. It does not matter much what the signals are when
+* debugging the demodulator. All that you are trying to do is confirm that 0's
+* and 1's are reliably different. Any reader+application will do.
 
 * Adjust the scope's knobs until you can visually distinguish the input and
   output signals and interpret them by eye.  Remember that the analog signal
-  from the reader is FSK.
+  from the reader is PIE (Pulse Interval Modulation). For a reference on this,
+	see: http://rfidsecurity.uark.edu/downloads/slides/mod04_lesson04_slides.pdf
 
 * Compare the signals of input channel, output channel and received channel to
-  see whether the bit streams are same. If the bit streams are not same, check
-  whether left or lower the voltalge level of bit power channel can make them
-  same.
+  see whether the bit streams are same. If the bit streams are not the same, you
+	will have to tune the bit power channel to correct this. 
 
-The capacitor C2 adjusts the voltage level that separates a low signal from a
+* The capacitor C2 adjusts the voltage level that separates a low signal from a
 high signal.  The present value of capacitor is 0.1uF.  Once the change of
 capacitor value renders more mismatches of bit streams of the input, output,
 and received channels, the ideal value of the capacitor is found.
